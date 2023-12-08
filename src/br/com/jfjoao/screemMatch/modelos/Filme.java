@@ -35,7 +35,6 @@ public class Filme {
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
-
     // Métodos
     public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
@@ -46,12 +45,10 @@ public class Filme {
         System.out.println("Duração: " + duracaoEmMinutos + " minutos.");
         System.out.println("Premium: " + incluidoNoPlano);
     }
-
     public void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
-
     public double obterMediaAvaliacoes(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
         }

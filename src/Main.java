@@ -1,5 +1,4 @@
 import br.com.jfjoao.screemMatch.modelos.Filme;
-
 public class Main {
     public static void main(String[] args) {
         // Cadastro de novo filme
