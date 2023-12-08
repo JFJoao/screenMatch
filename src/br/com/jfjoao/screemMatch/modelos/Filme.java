@@ -53,4 +53,3 @@ public class Filme {
         return somaDasAvaliacoes / totalDeAvaliacoes;
         }
     }
-

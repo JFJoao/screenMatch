@@ -18,5 +18,6 @@ public class Main {
         meuFilme.exibeFichaTecnica();
         System.out.println("Nota: " + meuFilme.obterMediaAvaliacoes());
         System.out.println("Votos: " + meuFilme.getTotalDeAvaliacoes());
+
     }
 }
