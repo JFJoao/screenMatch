@@ -1,9 +1,12 @@
 package br.com.jfjoao.screemMatch.modelos;
 
-public class Filme extends Titulo{
+public class Filme extends Titulo {
 
     // Atributo
     private String diretor;
+    public int getDuracaoemMinutos() {
+        return 0;
+    }
 
     // Setter
     public void setDiretor(String diretor) {
@@ -15,4 +18,5 @@ public class Filme extends Titulo{
         return diretor;
     }
 
-    }
+
+}

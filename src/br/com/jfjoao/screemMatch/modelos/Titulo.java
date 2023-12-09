@@ -1,6 +1,6 @@
 package br.com.jfjoao.screemMatch.modelos;
 
-public class Titulo {
+public abstract class Titulo {
 
     // Atributos
     private String nome;
@@ -15,6 +15,9 @@ public class Titulo {
     // Getters
     public int getTotalDeAvaliacoes(){
         return totalDeAvaliacoes;
+    }
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
     }
 
     // Setters
@@ -39,7 +42,7 @@ public class Titulo {
     // Métodos
     public void exibeFichaTecnica(){
         System.out.println("Nome do título: " + nome);
-        System.out.println("Ano de lancamento" + anoDeLancamento);
+        System.out.println("Ano de lancamento " + anoDeLancamento);
         System.out.println("Sinopse: " + sinopse);
         System.out.println("Nota: " + avaliacao );
         System.out.println("Total avaliações: " + totalDeAvaliacoes);
@@ -53,4 +56,6 @@ public class Titulo {
     public double obterMediaAvaliacoes(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
+
+    public abstract int getDuracaoemMinutos();
 }
