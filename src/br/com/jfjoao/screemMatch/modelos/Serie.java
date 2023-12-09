@@ -1,6 +1,6 @@
 package br.com.jfjoao.screemMatch.modelos;
 
-public class Serie extends Titulo{
+public class Serie extends Titulo {
 
     //Atributos
     private int temporadas;
@@ -36,8 +36,9 @@ public class Serie extends Titulo{
     public int getMinutosPorEpisodio() {
         return minutosPorEpisodio;
     }
+
     @Override
-    public int getDuracaoemMinutos(){
+    public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
     }
 }

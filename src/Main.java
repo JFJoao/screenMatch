@@ -32,16 +32,19 @@ public class Main {
         novaSerie.setMinutosPorEpisodio(50);
         novaSerie.setEpisodiosPorTemporada(10);
         novaSerie.setTemporadas(3);
-        System.out.println(novaSerie.getDuracaoEmMinutos());
+        // Teste tempo serie
+        //System.out.println(novaSerie.getDuracaoEmMinutos());
 
 
         // Testando Calculadora
-
+        // Criando objeto
         CalculadoraDeTempo calculadoraDeTempo = new CalculadoraDeTempo();
+        // Cadastrando titulos
         calculadoraDeTempo.inclui(meuFilme);
         calculadoraDeTempo.inclui(novoFilme);
         calculadoraDeTempo.inclui(novaSerie);
-        System.out.println(calculadoraDeTempo.getTempoTotal());
+        // Resultado total
+        System.out.println(calculadoraDeTempo.getTempoTotal()/60 + " horas, para assistir tudo.");
 
     }
 }

@@ -57,5 +57,4 @@ public abstract class Titulo {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
-    public abstract int getDuracaoemMinutos();
 }
