@@ -1,4 +1,5 @@
 import br.com.jfjoao.screemMatch.calculos.CalculadoraDeTempo;
+import br.com.jfjoao.screemMatch.calculos.FiltroRecomendacao;
 import br.com.jfjoao.screemMatch.modelos.Filme;
 import br.com.jfjoao.screemMatch.modelos.Serie;
 public class Main {
@@ -45,6 +46,10 @@ public class Main {
         calculadoraDeTempo.inclui(novaSerie);
         // Resultado total
         System.out.println(calculadoraDeTempo.getTempoTotal()/60 + " horas, para assistir tudo.");
+
+        // Filtro de recomendação
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(meuFilme);
 
     }
 }

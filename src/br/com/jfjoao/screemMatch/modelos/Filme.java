@@ -1,6 +1,8 @@
 package br.com.jfjoao.screemMatch.modelos;
 
-public class Filme extends Titulo {
+import br.com.jfjoao.screemMatch.calculos.Classificavel;
+
+public class Filme extends Titulo implements Classificavel {
 
     // Atributo
     private String diretor;
@@ -19,4 +21,8 @@ public class Filme extends Titulo {
     }
 
 
+    @Override
+    public int getClassificacao() {
+        return (int) obterMediaAvaliacoes() / 2;
+    }
 }
