@@ -2,6 +2,11 @@ import br.com.jfjoao.screemMatch.calculos.CalculadoraDeTempo;
 import br.com.jfjoao.screemMatch.calculos.FiltroRecomendacao;
 import br.com.jfjoao.screemMatch.modelos.Filme;
 import br.com.jfjoao.screemMatch.modelos.Serie;
+import br.com.jfjoao.screemMatch.modelos.Titulo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Cadastro de filme
@@ -50,6 +55,24 @@ public class Main {
         // Filtro de recomendação
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtra(meuFilme);
+
+        // Criando Arraylist
+        ArrayList<Titulo> listaDeTitulos = new ArrayList<>();
+        Scanner leitura = new Scanner(System.in);
+        listaDeTitulos.add(novaSerie);
+        listaDeTitulos.add(meuFilme);
+        listaDeTitulos.add(novoFilme);
+        // Exibe tamanho da coleção
+        System.out.println("Titulos disponiveis: " + listaDeTitulos.size());
+        // Imprimi dados de acordo com escolha do usuario
+        System.out.println("Escolha um filme do top 3: 1,2 ou 3 colocado ?");
+        int escolhaUsuario = leitura.nextInt();
+        // Utilizando index de acordo com escolha do usuario + metodo para nome
+        System.out.println("O primeiro título é: " + listaDeTitulos.get(escolhaUsuario -1).getNome());
+        // Testando print de ArrayList antes e depois de implementar toString (nativo do ArrayList)
+        System.out.println(listaDeTitulos);
+        // Checando print do ArrayList antes e depois do override em toString
+        System.out.println("toString do filme: " + listaDeTitulos.get(escolhaUsuario -1).toString());
 
     }
 }

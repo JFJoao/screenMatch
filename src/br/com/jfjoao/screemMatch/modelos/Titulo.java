@@ -20,6 +20,14 @@ public abstract class Titulo {
         return duracaoEmMinutos;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
     // Setters
     public void setNome(String nome){
         this.nome = nome;
@@ -56,5 +64,6 @@ public abstract class Titulo {
     public double obterMediaAvaliacoes(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
+
 
 }
