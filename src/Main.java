@@ -10,8 +10,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         // Cadastro de filme
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("300");
+        Filme meuFilme = new Filme("300");
+        //meuFilme.setNome("300");
         meuFilme.setAnoDeLancamento(2009);
         meuFilme.setDuracaoEmMinutos(180);
         meuFilme.setSinopse("Uma obra de arte!") ;
@@ -32,8 +32,8 @@ public class Main {
         novoFilme.setAnoDeLancamento(2023);
         novoFilme.setDuracaoEmMinutos(300);
         // Cadastro de nova Serie
-        Serie novaSerie = new Serie();
-        novaSerie.setNome("Peaky Blinders");
+        Serie novaSerie = new Serie("Peaky Blinders");
+        //novaSerie.setNome("Peaky Blinders");
         novaSerie.setAnoDeLancamento(2020);
         novaSerie.setMinutosPorEpisodio(50);
         novaSerie.setEpisodiosPorTemporada(10);

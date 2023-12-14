@@ -56,4 +56,12 @@ public class Serie extends Titulo {
     public String toString() {
         return "Série: " + this.getNome() + " (" + this.getAnoDeLancamento() + ")";
     }
+
+    // Construtor
+    public Serie(String peakyBlinders) {
+        super();
+    }
+    public Serie (){
+
+    }
 }
