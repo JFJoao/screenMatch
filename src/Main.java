@@ -73,6 +73,9 @@ public class Main {
         System.out.println(listaDeTitulos);
         // Checando print do ArrayList antes e depois do override em toString
         System.out.println("toString do filme: " + listaDeTitulos.get(escolhaUsuario -1).toString());
+        for (Titulo item: listaDeTitulos){
+            System.out.println(item);
+        }
 
     }
 }

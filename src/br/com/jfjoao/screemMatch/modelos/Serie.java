@@ -58,8 +58,8 @@ public class Serie extends Titulo {
     }
 
     // Construtor
-    public Serie(String peakyBlinders) {
-        super();
+    public Serie(String nome) {
+        this.setNome(nome);
     }
     public Serie (){
 
