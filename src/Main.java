@@ -73,9 +73,18 @@ public class Main {
         System.out.println(listaDeTitulos);
         // Checando print do ArrayList antes e depois do override em toString
         System.out.println("toString do filme: " + listaDeTitulos.get(escolhaUsuario -1).toString());
+        // for imprimindo cada elemento da lista
         for (Titulo item: listaDeTitulos){
+        /* Casting de objeto, com isso item passa a poder pegar métodos de filme e nao somente de Titulo
+         ex: filme.getClassificacao ( aqui foi criado em Titulo ) mas filme passa a responder de acordo.
+         obs. para checar se o objeto é determinada classe instaceof
+         ex: if (item instaceof Filme filme) { sout("texto" + filme.getClassificacao };
+             if (item instaceof Serie serie) { sout ("texto" + serie.getMetodoProprio};
+         */
+            Filme filme = (Filme) item;
             System.out.println(item);
         }
+        // For comphession, listaDeTitulos.forEach(nome -> System.out.println(nome));
 
     }
 }

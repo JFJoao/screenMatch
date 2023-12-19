@@ -47,6 +47,7 @@ public abstract class Titulo {
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
+
     // Métodos
     public void exibeFichaTecnica(){
         System.out.println("Nome do título: " + nome);
