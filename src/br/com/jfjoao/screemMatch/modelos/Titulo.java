@@ -1,6 +1,8 @@
 package br.com.jfjoao.screemMatch.modelos;
 
-public abstract class Titulo {
+import org.jetbrains.annotations.NotNull;
+
+public abstract class Titulo implements Comparable<Titulo> {
 
     // Atributos
     private String nome;
@@ -64,6 +66,11 @@ public abstract class Titulo {
     }
     public double obterMediaAvaliacoes(){
         return somaDasAvaliacoes / totalDeAvaliacoes;
+    }
+
+    @Override
+    public int compareTo(@NotNull Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
     }
 
 

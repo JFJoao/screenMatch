@@ -1,6 +1,7 @@
 package br.com.jfjoao.screemMatch.modelos;
 
 import br.com.jfjoao.screemMatch.calculos.Classificavel;
+import org.jetbrains.annotations.NotNull;
 
 public class Filme extends Titulo implements Classificavel {
 
@@ -39,4 +40,6 @@ public class Filme extends Titulo implements Classificavel {
     public Filme() {
 
     }
+
+
 }
