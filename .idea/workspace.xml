@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b48d829-0946-44e8-8081-f5061d31c10c" name="Changes" comment="Implementing constructors">
-      <change afterPath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Ator.java" afterDir="false" />
+    <list default="true" id="8b48d829-0946-44e8-8081-f5061d31c10c" name="Changes" comment="Foreach into Arraylist, plus check of instanceof (before this), now overriding method Comparable and extend an implements tho compare &quot;Titulo&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Filme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Filme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Titulo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/jfjoao/screemMatch/modelos/Serie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702954228764</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Foreach into Arraylist, plus check of instanceof (before this), now overriding method Comparable and extend an implements tho compare &quot;Titulo&quot;">
+      <option name="closed" value="true" />
+      <created>1702994637590</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702994637590</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +218,7 @@
     <MESSAGE value="fixing serie's calculator" />
     <MESSAGE value="Organizing and implementing the toString method override" />
     <MESSAGE value="Implementing constructors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing constructors" />
+    <MESSAGE value="Foreach into Arraylist, plus check of instanceof (before this), now overriding method Comparable and extend an implements tho compare &quot;Titulo&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Foreach into Arraylist, plus check of instanceof (before this), now overriding method Comparable and extend an implements tho compare &quot;Titulo&quot;" />
   </component>
 </project>
